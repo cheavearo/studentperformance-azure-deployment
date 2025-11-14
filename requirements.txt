@@ -8,5 +8,11 @@ catboost
 xgboost
 dill # A library to create pickle file.
 Flask
+gunicorn
+itsdangerous
+Jinja2
+Werkzeug
+MarkupSafe
+
 
 -e .
