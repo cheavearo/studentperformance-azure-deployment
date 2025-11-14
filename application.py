@@ -40,12 +40,12 @@ def predict_datapoint():
         print("After prediction of UI user dataframe")
 
         return render_template('home_ui.html', results = results[0])
-def open_browser():
-    if not os.environ.get("WERKZEUG_RUN_MAIN"):
-        webbrowser.open_new("http://127.0.0.1:5000/")
+# def open_browser():
+    # if not os.environ.get("WERKZEUG_RUN_MAIN"):
+        # webbrowser.open_new("http://127.0.0.1:5000/")
     
 if __name__=="__main__":
-    Timer(1, open_browser).start()
+    # Timer(1, open_browser).start()
     app.run(host="0.0.0.0", debug=True)
     # Notes:
     # host: the hostname to listen on. Set this to '0.0.0.0' to have the server available externally as well. Defaults to '127.0.0.1' or the host in the SERVER_NAME config variable if present.
