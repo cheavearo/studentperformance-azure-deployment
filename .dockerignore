@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.joblib
+*.h5
+*.onnx
+*.zip
+*.tar.gz
+*.ipynb
+logs/
+models/
+.env
+

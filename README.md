@@ -1,13 +1,10 @@
-"# studentperformance" 
+## End to End MAchine Learning Project
 
-1. The EB CLI is located at:
-C:\Users\User\AppData\Roaming\Python\Python312\Scripts
-2. Inside your venv, run:
-set PATH=%PATH%;C:\Users\User\AppData\Roaming\Python\Python312\Scripts
+## Run from terminal:
+#### (Note: Don't forget '  **.**  ' at the first command and open Docker Destop app)
 
-Then test: eb --version
-3. >eb init -p python-3.11 studentperformance-prediction-v3 --region us-east-2
+docker build -t testdockervearo.azurecr.io/mltest:latest .
 
-4. Create an environment and deploy your application to it with eb create:
->eb create stud-flask-env
+docker login testdockervearo.azurecr.io
 
+docker push testdockervearo.azurecr.io/mltest:latest
